@@ -1,0 +1,96 @@
+:root{
+    --nav-txt-color: black;
+    --prussian-blue:#173753;
+    --iceberg:#6DAEDB;
+    --tufts-blue:#2892D7;
+    --charcoal:#1B4353;
+    --Honolulu-blue:#1D70A2;
+}
+
+body {
+  margin: 0%;
+  padding: 0;
+  border: 0;
+  font-family: 'Lato',Helvetica, sans-serif, Arial;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0px 3px 5px gainsboro;
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+background-color: white;
+}
+.header-title{
+    width: 20%;
+}
+.header-title a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.header-nav{
+    width: 80%;
+    height: max-content;  
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav-items{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+.header-nav-items__item{
+    height: 100%;
+    width: auto;
+    padding: .5rem;
+    border-radius: 5px;
+}
+.header-nav-items__item:hover{
+    background-color: var(--Honolulu-blue);
+    --nav-txt-color:white;
+}
+.header-nav-items__item a{
+    color: var(--nav-txt-color);
+    text-decoration: none;
+}
+
+.main-section{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10% 40px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home {
+    margin-top: 70px;
+    background-color: white;
+}
+.inicio-title{
+
+}
+.academic {
+ 
+}
+
+.work {
+   
+}
+
+
+
