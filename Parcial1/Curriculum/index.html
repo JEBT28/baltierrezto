@@ -1,38 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"></link>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Curriculum</title>
-</head>
-<body>
-    <header class="header">
-           <div class="header-title"><a href="./index.html">Juan Baltierrez</a></div>
-            <nav class="header-nav">
-                <ul class="header-nav-items">
-                    <li class="header-nav-items__item"><a href="#home">Inicio</a></li>
-                    <li class="header-nav-items__item"><a href="#academic">Academico</a></li>
-                    <li class="header-nav-items__item"><a href="#work">Laboral</a></li>
-                    <li class="header-nav-items__item"><a href="">Habilidades</a></li>
-                    <li class="header-nav-items__item"><a href="">Contacto</a></li>
-                </ul>
-            </nav>        
-    </header>
-    <section class="main-section home" id="home">
-        
-    </section>
-    <section class="main-section academic" id="academic">
-        <h3>Academico    </h3>
-    </section>
-    <section class="main-section work" id="work">
-        <h3>Laboral    </h3>
-    </section>
-    <footer>
-            
-    </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cv">
+      <div class="fondo">
+        <div class="fondo-superior">
+          <div class="circle circle1"></div>
+        </div>
+        <div class="fondo-inferior">
+          <div class="circle circle2"></div>
+        </div>
+      </div>
+      <div class="contenido">
+        <div
+          class="card"
+          style="
+            width: 150px;
+            height: 170px;
+            padding: 0px 10px;
+            background-color: white;
+          "
+        >
+          <figure class="card-img">
+            <img src="./img/foto.png" alt="" srcset="" />
+          </figure>
+        </div>
+        <div class="card" style="width: 350px; height: 170px">
+          <h3>Juan Esteban Baltierrez</h3>
+          <h4>Programador</h4>
+          <p>
+            Hola, mi nombre es Juan y tengo 20 años. <br />
+            Soy estudiante de ingenieria en sistemas computacionales en el TecNM
+            Campus Nuevo Laredo
+          </p>
+        </div>
+        <div class="card">
+          <h3>Experiencia</h3>
+          <p style="border-left: 2px solid var(--tufts-blue)">
+            Practicante de programacion <br /><br />
+            Analista de costos <br /><br />
+            Programdor C# .Net <br /><br />
+            Programador Web jr <br /><br />
+          </p>
+        </div>
+        <div class="card">
+          <h3>Estudios</h3>
+          <p style="border-left: 2px solid var(--tufts-blue)">
+            Primaria Alvaro Obregon <br /><br />
+            Secundaria Jesus Alvarado Rodarte <br /><br />
+            Preparatoria CBTIS 137 <br /><br />
+            Universidad TecNM Nuevo Laredo (Actualmente) <br />
+          </p>
+        </div>
+        <div class="card">
+          <h3>Habilidades</h3>
+          <ul>
+            <li>
+              <div class="quad" style="background-color: aqua"></div>
+              <h5>Html</h5>
+            </li>
+            <li>
+              <div class="quad" style="background-color: blue"></div>
+              <h5>CSS</h5>
+            </li>
+            <li>
+              <div class="quad" style="background-color: cornflowerblue"></div>
+              <h5>TailwindCSS</h5>
+            </li>
+            <li>
+              <div class="quad" style="background-color: orange"></div>
+              <h5>Javascript</h5>
+            </li>
+            <li>
+              <div class="quad" style="background-color: red"></div>
+              <h5>C#</h5>
+            </li>
+            <li>
+              <div class="quad" style="background-color: goldenrod"></div>
+              <h5>Python</h5>
+            </li>
+            <li>
+              <div class="quad" style="background-color: greenyellow"></div>
+              <h5>Dart</h5>
+            </li>
+            <li>
+              <div class="quad" style="background-color: aquamarine"></div>
+              <h5>Flutter</h5>
+            </li>
+            <li>
+              <div class="quad" style="background-color: brown"></div>
+              <h5>Java</h5>
+            </li>
+            <li>
+              <div class="quad" style="background-color: cadetblue"></div>
+              <h5>SQL</h5>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Pasatiempos</h3>
+          <div class="hobbies">
+            <div class="hobbies-item">
+              <img src="./img/movies.svg" />
+              <h6>Ver peliculas</h6>
+            </div>
+            <div class="hobbies-item">
+              <img src="./img/read.svg" />
+              <h6>Leer</h6>
+            </div>
+            <div class="hobbies-item">
+              <img src="./img/listening.svg" />
+              <h6>Musica</h6>
+            </div>
+            <div class="hobbies-item">
+              <img src="./img/chat.svg" />
+              <h6>Redes sociales</h6>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card contacto"
+        >
+          <div class="social">
+            <a href="" class="social-item">
+                <img src="./img/whatsapp.svg" alt=""/>
+               </a>
+               <a href="" class="social-item"><img src="./img/linkedin.svg" alt=""/>
+               <a href="" class="social-item"><img src="./img/github.svg"alt=""/>
+               <a href="" class="social-item"><img src="./img/twitter-1.svg" alt=""/></a>
+          </div>
+          <h4>contacto@email.com</h4>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
