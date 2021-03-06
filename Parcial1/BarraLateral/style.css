@@ -1,0 +1,145 @@
+:root {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  --nav-txt-color: black;
+  --prussian-blue: #173753;
+  --iceberg: #6daedb;
+  --tufts-blue: #2892d7;
+  --charcoal: #1b4353;
+  --Honolulu-blue: #1d70a2;
+  --width-menu: 100px;
+}
+
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Menu {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: var(--prussian-blue);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.Menu-button {
+  display: none;
+}
+.Menu-button-label {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+}
+
+.Menu-button-label img {
+  height: 30px;
+  width: 30px;
+}
+
+.Menu-list {
+  display: none;
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+.Menu-list-item a {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+  margin: 10px 0px;
+  border-radius: 0.5rem;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+.Menu-list-item a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.Menu-list-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+h3 {
+  color: white;
+}
+
+.Content {
+  padding: 25px;
+  width: calc(100% - 250px);
+  height: 100%;
+  float: right;
+  box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+  .Menu {
+    position: relative;
+    width: 100%;
+    padding: 5px 10px;
+  }
+  .Menu-button-label {
+    display: none;
+  }
+  .Menu-button {
+    display: none;
+  }
+  .Menu-list {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  h3 {
+    color: white;
+    margin: 0;
+  }
+  .Content {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .Menu {
+    position: relative;
+    width: 100%;
+    padding: 5px 10px;
+    height: max-content;
+  }
+  .Menu-button-label {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .Menu-button:checked ~ .Menu-list {
+    display: block;
+  }
+  .Menu-list {
+    display: none;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .Menu-list-item h3 {
+    color: white;
+    margin: 0;
+  }
+  .Content {
+    float: none;
+    width: 100%;
+  }
+}
