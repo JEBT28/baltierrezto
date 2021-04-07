@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Juan Tobón</title>
+  <script src="./js/app.js"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+  <link rel="manifest" href="./icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./icons/ms-icon-144x144.png">
+
+</head>
+<body class="w-screen h-screen overflow-x-hidden text-black bg-blue-100 dark:text-white dark:bg-gray-900 scrollbar">
+  <nav
+    class="flex flex-wrap w-full h-auto p-4 bg-white border-b shadow sm:p-4 lg:px-8 lg:h-16 lg:flex-row dark:border-gray-500 dark:bg-transparent">
+    <h1 class="ml-4 text-base lg:text-xl font-semibold text-blue-700 dark:text-blue-200">
+      Juan Tobón
+    </h1>
+    <button
+      class="flex mr-2 items-center justify-center float-right w-10 h-full ml-auto overflow-hidden text-yellow-500 rounded-full focus:outline-none"
+      id="switchTheme">
+      <svg class="hidden w-8 h-8 dark:block" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path clip-rule="evenodd"
+          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+          fill-rule="evenodd"></path>
+      </svg>
+      <svg class="w-8 h-8 dark:hidden" enable-background="new 0 0 490.914 490.914" id="Capa_1"
+        viewBox="0 0 490.914 490.914" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <path
+            d="m476.09 205.694c-18.628-114.523-113.616-197.586-224.49-205.657-11.214-.816-18.117 12.129-10.984 20.821 28.435 34.651 45.348 79.12 44.88 127.551-1.053 109.097-91.22 197.34-200.316 196.149-19.812-.216-38.926-3.343-56.935-8.97-10.783-3.369-20.262 7.811-15.284 17.952 46.428 94.573 150.659 151.941 260.037 134.15 133.953-21.789 224.881-148.043 203.092-281.996z"
+            fill="#fee97d" />
+          <path
+            d="m38.731 394.967c20.584 5.069 42.18 7.877 64.455 8.1 142.446 1.425 260.177-104.065 261.553-234.483.61-57.896-61.629-156.937-62.11-159.3-16.457-4.832-33.545-7.974-51.03-9.247-11.214-.816-18.117 12.129-10.984 20.821 28.436 34.651 45.348 79.12 44.88 127.551-1.053 109.097-91.22 197.34-200.316 196.149-19.813-.216-38.926-3.343-56.935-8.97-10.783-3.369-20.262 7.811-15.284 17.952 7.249 14.764 15.906 28.621 25.771 41.427z"
+            fill="#fee45a" />
+          <path
+            d="m199.002 206.467c-8.227-5.336-14.99-12-20.192-20.079-2.424-3.765-7.926-3.83-10.523-.182-5.27 7.404-12.027 13.935-20.101 19.693-3.717 2.651-3.561 8.299.309 10.722 8.052 5.043 14.799 11.572 20.057 19.794 2.423 3.789 7.98 3.803 10.47.058 5.09-7.654 11.925-13.973 20.035-19.316 3.875-2.55 3.836-8.166-.055-10.69z"
+            fill="#fee97d" />
+          <path
+            d="m76.246 87.339c-8.227-5.336-14.99-12-20.192-20.079-2.424-3.765-7.926-3.83-10.523-.182-5.27 7.404-12.027 13.935-20.101 19.693-3.717 2.651-3.561 8.299.309 10.722 8.052 5.043 14.799 11.572 20.057 19.794 2.423 3.789 7.98 3.803 10.47.058 5.09-7.654 11.925-13.973 20.035-19.316 3.874-2.551 3.836-8.167-.055-10.69z"
+            fill="#fee97d" />
+          <g>
+            <path
+              d="m166.396 110.312c-4.143 0-7.5-3.358-7.5-7.5v-28.074c0-4.142 3.357-7.5 7.5-7.5s7.5 3.358 7.5 7.5v28.073c0 4.143-3.357 7.501-7.5 7.501z"
+              fill="#fef48b" />
+          </g>
+          <g>
+            <path
+              d="m180.433 96.275h-28.073c-4.143 0-7.5-3.358-7.5-7.5s3.357-7.5 7.5-7.5h28.073c4.143 0 7.5 3.358 7.5 7.5s-3.357 7.5-7.5 7.5z"
+              fill="#fef48b" />
+          </g>
+          <g>
+            <path
+              d="m55.331 249.078c-4.143 0-7.5-3.358-7.5-7.5v-28.073c0-4.142 3.357-7.5 7.5-7.5s7.5 3.358 7.5 7.5v28.073c0 4.142-3.358 7.5-7.5 7.5z"
+              fill="#fef48b" />
+          </g>
+          <g>
+            <path
+              d="m69.367 235.041h-28.073c-4.143 0-7.5-3.358-7.5-7.5s3.357-7.5 7.5-7.5h28.073c4.143 0 7.5 3.358 7.5 7.5s-3.358 7.5-7.5 7.5z"
+              fill="#fef48b" />
+          </g>
+        </g>
+      </svg>
+    </button>
+    <input class="hidden" type="checkbox" id="Menu-checkbox" />
+    <label for="Menu-checkbox"
+      class="flex items-center float-right w-8 h-8 ml-0 md:hidden text-dark dark:text-white"><svg class="h-6"
+        fill="currentcolor" height="384pt" viewBox="0 -21 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m362.667969 0h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0" />
+        <path
+          d="m362.667969 128h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0" />
+        <path
+          d="m362.667969 256h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0" />
+      </svg>
+    </label>
+    <ul
+      class="flex flex-col hidden float-right w-full ml-0 md:w-auto md:space-x-4 md:items-center md:flex md:flex-row md:block">
+      <li class="px-2 py-1 font-medium rounded-lg hover:bg-blue-700 hover:text-white">
+        <a href="#Inicio">Inicio</a>
+      </li>
+      <li class="px-2 py-1 font-medium rounded-lg hover:bg-blue-700 hover:text-white">
+        <a href="#Habilidades">Habilidades</a>
+      </li>
+      <li class="px-2 py-1 font-medium rounded-lg hover:bg-blue-700 hover:text-white">
+        <a href="#Proyectos">Proyectos</a>
+      </li>
+      <li class="px-2 py-1 font-medium rounded-lg hover:bg-blue-700 hover:text-white">
+        <a href="#Contacto">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+  <section class="w-full" style="height: calc(100vh - 4rem)">
+    <div class="absolute z-10 flex flex-col justify-end w-screen " style="height: calc(100vh - 4rem)">
+      <svg id="visual" class="w-screen h-auto text-blue-500" viewBox="0 0 1024 450" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <path
+          d="M0 406L24.3 402.3C48.7 398.7 97.3 391.3 146.2 388.7C195 386 244 388 292.8 393.3C341.7 398.7 390.3 407.3 439 412.2C487.7 417 536.3 418 585 415.2C633.7 412.3 682.3 405.7 731.2 399.5C780 393.3 829 387.7 877.8 389C926.7 390.3 975.3 398.7 999.7 402.8L1024 407L1024 451L999.7 451C975.3 451 926.7 451 877.8 451C829 451 780 451 731.2 451C682.3 451 633.7 451 585 451C536.3 451 487.7 451 439 451C390.3 451 341.7 451 292.8 451C244 451 195 451 146.2 451C97.3 451 48.7 451 24.3 451L0 451Z"
+          fill="currentcolor"></path>
+      </svg>
+    </div>
+    <div class="absolute z-20 flex flex-col justify-center w-full h-full md:grid md:grid-cols-7">
+      <div class="flex flex-col items-center justify-center col-span-4 px-8 py-4 lg:px-20">
+        <div class="flex items-center w-full h-auto space-x-2 lg:w-128">
+          <figure class="w-10 border border-black dark:border-white lg:w-20"></figure>
+          <h3 class="text-lg font-semibold text-blue-700">Acerca de mi</h3>
+        </div>
+        <p class="w-full text-lg font-bold lg:text-4xl lg:w-128">Hola, me llamo <b class="text-blue-700">Juan
+            Tobón</b>, soy estudiante de ingenieria en sistemas y desarollador web front-end.<br>Mi objetivo es crear software que impacte en la sociedad en la que vivimos.</p></h1>
+      </div>
+      <div class="flex items-center justify-center w-full col-span-3 pb-10">
+        <img class="w-3/5 md:w-4/5 h-auto" src="./svg/coding.svg" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="w-full -my-1 h-auto md:h-full flex flex-col md:grid md:grid-cols-7 bg-blue-500 px-2 py-8 md:p-8"
+    id="Habilidades">
+    <div class="flex flex-col items-center justify-center w-full col-span-3 pb-10">
+      <h3 class="px-16 w-full text-center h-1/6 text-3xl lg:text-6xl font-bold text-white" style="letter-spacing: 1px;">
+        Habilidades</h3>
+      <img class="w-3/5 md:w-4/5 h-auto" src="./svg/skills.svg" alt="">
+    </div>
+    <div class="col-span-4 w-full h-full flex items-center justify-center">
+      <div class="w-4/5 p-2 font-medium text-black bg-white rounded-lg h-auto">
+        <div class="w-full h-auto px-4 py-4 space-y-2">
+          <h4 class="text-base lg:text-xl font-semibold text-gray-600">HTML</h4>
+          <div class=" w-full h-3 rounded-2xl md:h-6 md:rounded-3xl bg-gray-300">
+            <div class="w-3/5 h-3 rounded-2xl md:h-6 md:rounded-3xl bg-red-600"></div>
+          </div>
+          <h4 class="text-base lg:text-xl font-semibold text-gray-600 mt-2">CSS</h4>
+          <div class=" w-full h-3 rounded-2xl md:h-6 md:rounded-3xl bg-gray-300">
+            <div class="w-4/5 h-3 rounded-2xl md:h-6 md:rounded-3xl bg-blue-600"></div>
+          </div>
+          <h4 class="text-base lg:text-xl font-semibold text-gray-600 mt-2">Javascript</h4>
+          <div class=" w-full h-3 rounded-2xl md:h-6 md:rounded-3xl bg-gray-300">
+            <div class="w-2/5 h-3 rounded-2xl md:h-6 md:rounded-3xl bg-yellow-300"></div>
+          </div>
+          <h4 class="text-base lg:text-xl font-semibold text-gray-600 mt-2">Python</h4>
+          <div class=" w-full h-3 rounded-2xl md:h-6 md:rounded-3xl bg-gray-300">
+            <div class="w-2/5 h-3 rounded-2xl md:h-6 md:rounded-3xl bg-green-600"></div>
+          </div>
+          <h4 class="text-base lg:text-xl font-semibold text-gray-600 mt-2">Flutter</h4>
+          <div class=" w-full h-3 rounded-2xl md:h-6 md:rounded-3xl bg-gray-300">
+            <div class="w-2/5 h-3 rounded-2xl md:h-6 md:rounded-3xl bg-blue-600"></div>
+          </div>
+          <h4 class="text-base lg:text-xl font-semibold text-gray-600 mt-2">SQL</h4>
+          <div class=" w-full h-3 rounded-2xl md:h-6 md:rounded-3xl bg-gray-300">
+            <div class="w-4/5 h-3 bg-yellow-600 md:h-6 rounded-3xl"></div>
+          </div>
+          <h4 class="text-base lg:text-xl font-semibold text-gray-600 mt-2">C# .NET</h4>
+          <div class=" w-full h-3 rounded-2xl md:h-6 md:rounded-3xl bg-gray-300">
+            <div class="w-4/5 h-3 bg-purple-600 rounded-2xl md:h-6 md:rounded-3xl"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-screen -my-1 " id="Proyectos" style="height: max-content;">
+    <svg id="visual" class="w-full h-auto border-none  text-blue-500 transform rotate-180" viewBox="0 0 2560 450"
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+      <path
+        d="M0 292L106.7 300C213.3 308 426.7 324 640 318.5C853.3 313 1066.7 286 1280 296.7C1493.3 307.3 1706.7 355.7 1920 357.5C2133.3 359.3 2346.7 314.7 2453.3 292.3L2560 270L2560 451L2453.3 451C2346.7 451 2133.3 451 1920 451C1706.7 451 1493.3 451 1280 451C1066.7 451 853.3 451 640 451C426.7 451 213.3 451 106.7 451L0 451Z"
+        fill="currentcolor" stroke-linecap="round" stroke-linejoin="miter"></path>
+    </svg>
+    <div class=" w-full -my-7 md:-my-16 space-y-10 flex px-4 flex-wrap justify-center" id="Proyectos-contenido"
+      style="height: max-content;">
+      <h3 class="px-16 w-full text-center text-3xl lg:text-6xl font-bold " style="letter-spacing: 1px;">Proyectos</h3>
+      <h3 id="Loading" class="w-full text-center">Loading</h3>
+    </div>
+    <svg id="visual" class=" w-full h-auto  text-blue-500" viewBox="0 0 2560 450" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+      <path
+        d="M0 292L106.7 300C213.3 308 426.7 324 640 318.5C853.3 313 1066.7 286 1280 296.7C1493.3 307.3 1706.7 355.7 1920 357.5C2133.3 359.3 2346.7 314.7 2453.3 292.3L2560 270L2560 451L2453.3 451C2346.7 451 2133.3 451 1920 451C1706.7 451 1493.3 451 1280 451C1066.7 451 853.3 451 640 451C426.7 451 213.3 451 106.7 451L0 451Z"
+        fill="currentcolor" stroke-linecap="round" stroke-linejoin="miter"></path>
+    </svg>
+  </section>
+  <footer class="w-full h-auto py-10 bg-blue-500 p-8  flex flex-col lg:grid lg:grid-cols-3 lg:grid-rows-6 lg:px-24">
+    <div class="w-full col-span-2 flex flex-wrap row-span-5" id="Contacto">
+      <h3 class="w-full text-3xl text-center mb-5 font-semibold text-white lg:text-left">Contacto</h3>
+      <ul class="w-full lg:w-2/6 list-none space-y-2 lg:mr-4">
+        <li><a class="flex h-auto px-2 py-2 group rounded hover:shadow-lg hover:bg-white "
+            href="https://www.linkedin.com/in/juantobon/">
+            <svg class="text-white w-6 h-6 mr-2 group-hover:text-blue-700" version="1.1" id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+              <g>
+                <rect y="160" fill="currentColor" width="114.496" height="352" />
+                <path fill="currentColor"
+                  d="M426.368,164.128c-1.216-0.384-2.368-0.8-3.648-1.152c-1.536-0.352-3.072-0.64-4.64-0.896
+             c-6.08-1.216-12.736-2.08-20.544-2.08l0,0l0,0c-66.752,0-109.088,48.544-123.04,67.296V160H160v352h114.496V320
+             c0,0,86.528-120.512,123.04-32c0,79.008,0,224,0,224H512V274.464C512,221.28,475.552,176.96,426.368,164.128z" />
+                <circle fill="currentColor" cx="56" cy="56" r="56" />
+              </g>
+            </svg>
+            <h4 class="text-white group-hover:text-black font-medium text-xl">JuanTobon</h4>
+          </a></li>
+        <li><a class="flex h-auto px-2 py-2 group rounded hover:shadow-lg hover:bg-white "
+            href="https://github.com/JEBT28">
+            <svg class="text-white w-7 h-7 mr-2 group-hover:text-purple-700" version="1.1" id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+              <path fill="currentColor" d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872
+          c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464
+          c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496
+          c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368c-56.832-6.496-116.608-28.544-116.608-127.008
+          c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68c0,0,21.504-6.912,70.4,26.336
+          c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672c48.864-33.248,70.336-26.336,70.336-26.336
+          c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992c0,98.72-59.84,120.448-116.864,126.816
+          c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496c0,6.88,4.608,14.88,17.6,12.352
+          C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z" />
+            </svg>
+            <h4 class="text-white group-hover:text-black font-medium text-xl">JEBT28</h4>
+          </a></li>
+        <li><a class="flex h-auto px-2 py-2 group rounded hover:shadow-lg hover:bg-white "
+            href="https://twitter.com/JEBT28">
+            <svg class="text-white w-6 h-6 mr-2 group-hover:text-blue-300" version="1.1" id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+              <path fill="currentcolor" d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+          c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+          c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+          c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+          c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+          c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+          C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+          C480.224,136.96,497.728,118.496,512,97.248z" />
+            </svg>
+            <h4 class="text-white group-hover:text-black font-medium text-xl">@JEBT28</h4>
+          </a></li>
+        <li><a class="flex h-auto px-2 py-2 group rounded hover:shadow-lg hover:bg-white "
+            href="mailto:juanbal2808@gmail.com?Subject=Contacto">
+            <svg class="text-white w-6 h-6 mr-2 group-hover:text-yellow-400" version="1.1" id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 24 24" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g fill="currentcolor" fill-rule="nonzero">
+                  <path
+                    d="M21.0005408,7.51125528 C21.9023172,8.08884765 22.5,9.09962567 22.5,10.25 L22.5,16.25 C22.5,19.1494949 20.1494949,21.5 17.25,21.5 L8.25,21.5 C7.09962567,21.5 6.08884765,20.9023172 5.51125528,20.0005408 L17.25,20 C19.3210678,20 21,18.3210678 21,16.25 L21.0005408,7.51125528 Z M20,8.11 L20,15.75 C20,17.4830315 18.6435452,18.8992459 16.9344239,18.9948552 L16.75,19 L5.25,19 C3.51696854,19 2.10075407,17.6435452 2.00514479,15.9344239 L2,15.75 L2,8.11 L10.6506902,12.6636887 C10.8693456,12.7787704 11.1306544,12.7787704 11.3493098,12.6636887 L20,8.11 Z M5.25,4 L16.75,4 C18.274679,4 19.55414,5.04990327 19.9048523,6.46617907 L11,11.1524641 L2.09514774,6.46617907 C2.43124695,5.10891476 3.62031162,4.088128 5.06074174,4.0054188 L5.25,4 Z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+            <h4 class="text-white group-hover:text-black font-medium text-xl">Enviame un mail</h4>
+          </a></li>
+      </ul>
+      <ul class="w-full lg:w-2/6 ">
+        <li class="flex p-2 items-center"><svg version="1.1" class="text-white w-6 h-6 mr-2" id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 321.883 321.883" xml:space="preserve">
+            <path fill="currentcolor" d="M160.941,0c-69.035,0-125,55.964-125,125.001c0,69.035,85.187,196.882,125,196.882c39.813,0,125-127.847,125-196.882
+           C285.941,55.964,229.977,0,160.941,0z M160.941,182.294c-36.341,0-65.801-29.46-65.801-65.802c0-36.34,29.46-65.801,65.801-65.801
+           c36.341,0,65.801,29.461,65.801,65.801C226.742,152.834,197.282,182.294,160.941,182.294z" />
+          </svg>
+          <h4 class="text-white font-medium text-xl">Nuevo Laredo, Tamps, MX.</h4>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="w-full text-3xl text-center mb-5 font-semibold text-white lg:text-left row-span-5">Secciones</h3>
+      <ul class="flex flex-col w-full ">
+        <li class="p-2 font-semibold text-xl text-white">
+          <a href="#Inicio">Inicio</a>
+        </li>
+        <li class="p-2 font-semibold text-xl  text-white">
+          <a href="#Habilidades">Habilidades</a>
+        </li>
+        <li class="p-2 font-semibold text-xl  text-white">
+          <a href="#Proyectos">Proyectos</a>
+        </li>
+        <li class="p-2 font-semibold text-xl  text-white">
+          <a href="#Contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex justify-end col-span-3  row-span-1">
+      <p class="text-white">Juan Esteban Baltierrez Tobón © 2021</p>
+    </div>
+  </footer>
+</body>
+
+
+</html>
