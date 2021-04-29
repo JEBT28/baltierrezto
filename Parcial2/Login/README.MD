@@ -13,11 +13,11 @@
 ## Credenciales para el inicio de sesión
 
 ### Usuario Personal
-**Usuario:** JEBT28
-**Email:** 18100152@nlaredo.com
-**Contraseña:** 18100152
+**Usuario:** JEBT28  
+**Email:** 18100152@nlaredo.com  
+**Contraseña:** 18100152   
 
 ### Usuario Invitado
-**Usuario:** INVITADO
-**Email:** invitado@nlaredo.com
-**Contraseña:** INV123
+**Usuario:** INVITADO  
+**Email:** invitado@nlaredo.com  
+**Contraseña:** INV123   
